@@ -1,0 +1,416 @@
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .navbar {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .navbar a:hover {
+    color: #cccccc; /* Ubah warna saat dihover sesuai kebutuhan */
+  }
+  
+  .brand {
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 32px;
+    margin-left: 15px;
+  }
+  .logo {
+    margin-right: 15px;
+  }
+  
+  .logo img {
+    width: 40px; /* Lebar gambar */
+    height: auto; /* Memastikan gambar tetap proporsional */
+  }
+  
+  .slider-container {
+    width: 99%;
+    max-height: 600px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 8px;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  img {
+    width: 100%;
+    height: 65%;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .center-text {
+    display: flex;
+  }
+  
+  .right-text {
+    text-align: justify;
+    flex: 1;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 50px;
+  }
+  
+  .left-text1{
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 200px;
+  }
+  
+  .right-text1{
+    flex:1;
+    margin-top:50px;
+    margin-left: 120px;
+  }
+  
+  .right-text p {
+    font-size: 20px;
+    font-style: initial;
+    margin: 5px;
+  }
+  
+  .center-text img{
+    width:80px;
+    height: 80px;
+    margin: 20px;
+  }
+  
+  .left-text {
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+  
+  .left-text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .left-text p {
+    font-size: 40px;
+    margin-top: 5px;
+    font-weight: 200;
+  }
+  
+  .form-group {
+    text-align: left;
+    margin: 15px 0;
+  }
+  
+  p.main {
+    margin-top: 15px;
+  }
+  
+  /* .container1{
+      width: 280px;
+      height: 350px;
+      margin:0 auto;
+      text-align: center;
+      padding:20px;
+      border-radius: 10px;
+      border: 1px solid #131212;
+      margin-left: 50px;
+    }
+    
+    .container2{
+      width: 280px;
+      height: 350px;
+      text-align: center;
+      padding:20px;
+      border-radius: 10px;
+      border: 1px solid #131212;
+      margin-right: 750px;
+    }
+  
+    .container3{
+      width: 280px;
+      height: 350px;
+      text-align: center;
+      padding:20px;
+      border-radius: 10px;
+      border: 1px solid #131212;
+      margin-right: 730px;
+    } */
+  
+  .container1,
+  .container2,
+  .container3,
+  .container4 {
+    width: 280px;
+    height: 350px;
+    margin: 0 10px; /* Menambahkan margin ke kiri dan kanan setiap container */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #131212;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .container7{
+    width: 280px;
+    height: 350px;
+    margin: 0 10px; /* Menambahkan margin ke kiri dan kanan setiap container */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #131212;
+    margin-top: 20px;
+    margin-left: 2px;
+  }
+  
+  .container6{
+    width: 1400px;
+    height: 400px;
+    margin: 0 10px; /* Menambahkan margin ke kiri dan kanan setiap container */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #131212;
+    margin-top: 80px;
+    margin-left: 40px;
+  }
+
+  .materi {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+  
+  p.tengah {
+    text-align: center;
+    margin-top: 70px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .tampil {
+    display: flex;
+  }
+  
+  .bagian {
+    flex: 1;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .bagian img {
+    width: 90px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .bagian h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .bagian p {
+    margin-top: none;
+  }
+  
+  .container5 {
+    width: 280px;
+    height: 350px;
+    text-align: justify;
+  }
+  
+  .materi img {
+    width: 100px;
+    height: 80px;
+    margin-top: 10px;
+  }
+  
+  .materi h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .materi p {
+    font-size: 15px;
+    text-align: justify;
+  }
+  
+  .materi button {
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  
+  .button4 {
+    width: 150px;
+    height: 30px;
+    margin-top: 60px;
+    font-weight: bold;
+  }
+  
+  .button3 {
+    width: 150px;
+    height: 30px;
+    margin-top: 80px;
+    font-weight: bold;
+  }
+  
+  .button2 {
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .button1 {
+    width: 150px;
+    height: 30px;
+    margin-top: 40px;
+    font-weight: bold;
+  }
+  
+  footer{
+    background-color: #131212;
+  }
+  
+  .footerContainer{
+    padding: 70px 30px 20px;
+  }
+  
+  .socialIcons{
+    display: flex;
+    justify-content:center ;
+  
+  }
+  
+  .socialIcons a{
+    text-decoration: none;
+    padding:10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  
+  .socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+  }
+  
+  .socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+  }
+  
+  .socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+  }
+  
+  .footerNav{
+    margin: 30px 0;
+  }
+  
+  .footerNav ul{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footerNav ul li a{
+    color:black;
+    margin: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  
+  .footerNav ul li a:hover{
+    opacity:1;
+  }
+  
+  .footerBottom {
+    text-align: center;
+  }
+  
+  h1.video{
+    font-size: 35px;
+    margin: 0;
+    margin-left: 10px;
+  }
+  
+  .tengah{
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  h1.tengah{
+    font-size: 35px;
+  }
+
+  p.urut{
+    text-align: center;
+    font-size: 20px;
+  }
+
+  p.MK{
+    text-align: right;
+    font-size: 20px;
+  }
+
+  p.Arti{
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  p.Pjl{
+    text-align: justify;
+    font-size: 15px;
+  }
